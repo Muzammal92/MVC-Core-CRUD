@@ -1,0 +1,35 @@
+﻿@model IEnumerable<MVC_CORE_CRUD.Models.Department>
+
+@{
+    ViewData["Title"] = "Department List";
+}
+
+<h1>Department List</h1>
+
+<p class="float-end">
+    <a asp-action="Create" class="btn btn-outline-primary">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Actions</th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-outline-warning">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID" class="btn btn-outline-success">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-outline-danger">Delete</a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

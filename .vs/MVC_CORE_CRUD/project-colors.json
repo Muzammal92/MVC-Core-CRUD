@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ee23fff2-481f-4e5f-ae61-74ed68baa012": {
+      "ProjectGuid": "ee23fff2-481f-4e5f-ae61-74ed68baa012",
+      "DisplayName": "MVC_CORE_CRUD",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}
